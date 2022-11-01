@@ -19,6 +19,7 @@ yarn-error.log*
 .DS_Store
 *coverage
 .nyc_output
+codecov*
 
 # cypress
 cypress/downloads
