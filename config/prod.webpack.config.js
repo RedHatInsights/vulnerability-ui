@@ -13,7 +13,12 @@ plugins.push(
         exposes: {
             './RootApp': resolve(__dirname, '../src/AppEntry'),
             './SystemDetail': resolve(__dirname, '../src/index.js')
-        }
+        },
+        shared: [
+            {
+                'react-router-dom': { singleton: true, requiredVersion: '*' }
+            }
+        ]
     })
 );
 
